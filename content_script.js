@@ -1,7 +1,3 @@
-var oldLocation = location.href;
-
-var valor = null;
-
 const createNewTab = () => {
  
     chrome.tabs.getSelected(null, function(tab){
@@ -22,12 +18,6 @@ const parseContent = () => {
     }
   });
 }
-
-setInterval(function() {
-  if(location.href != oldLocation) {
-    oldLocation = location.href
-  }
-}, 1000); // check every second
 
 document.addEventListener('DOMContentLoaded', function() {
   var link = document.getElementById('target');
