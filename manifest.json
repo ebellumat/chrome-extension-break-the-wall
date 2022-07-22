@@ -1,6 +1,6 @@
 {
   "name": "Break the wall",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "manifest_version": 2,
   "description": "This extension allows you to read any website without distractions or ads of any type",
   "browser_action": {
