@@ -1,14 +1,19 @@
 {
   "name": "Break the wall",
   "version": "2.0.0",
-  "manifest_version": 3,
+  "manifest_version": 2,
   "description": "This extension allows you to read any website without distractions or ads of any type",
+  "browser_action": {
+    "default_icon": "icon128.png",
+    "default_popup": "popup.html"
+  },   
   "content_scripts": [ {
       "js": [ "content_script.js"  ],
       "matches": [ "*://*/*"]    
   } ],
   "permissions" : [
-      "activeTab"
+      "activeTab",
+      "storage"
   ],
   "icons": { 
     "16": "icon16.png",
